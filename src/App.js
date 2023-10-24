@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       {/*<Users/>*/}
-      {/*<Comments/>*/}
-        <Cars/>
+      <Comments/>
+      {/*  <Cars/>*/}
 
     </div>
   );

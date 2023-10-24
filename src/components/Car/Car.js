@@ -2,7 +2,7 @@ import React from 'react';
 import {axiosServiceCars} from "../../services/axios.service";
 import {carsService} from "../../services/cars.service";
 
-const Car = ({car,setDeletedCar}) => {
+const Car = ({car,setDeletedCar,setUpdatedCar}) => {
     const {id,brand,year,price}=car
     const deleteCar=async()=>{
        await carsService.deleteById(id);
@@ -19,7 +19,7 @@ const Car = ({car,setDeletedCar}) => {
             <div>brand:{brand}</div>
             <div>year:{year}</div>
             <div>price:{price}</div>
-            <button>UPDATE</button>
+            <button onClick={()=>setUpdatedCar(car)}>UPDATE</button>
             <button onClick={()=>deleteCar()}>DELETE</button>
             <hr/>
 

@@ -6,7 +6,7 @@ const CommentsForm = ({setComments}) => {
   const{handleSubmit,reset,register}=  useForm()
     const save=async (comment)=>{
       const {data}= await commentService.create(comment);
-      setComments(prev=>[...prev,comment])
+      setComments(prev=>[...prev,data])
       reset()
 
     }

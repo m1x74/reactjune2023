@@ -18,7 +18,7 @@ const Cars = () => {
 
     return (
         <div>
-            <CarForm setTrigger={setTrigger}/>
+            <CarForm setTrigger={setTrigger} updatedCar={updatedCar}/>
             <hr/>
             {
                 cars.map((car)=><Car car={car} key={car.id} setDeletedCar={setDeletedCar} setUpdatedCar={setUpdatedCar}/>)
