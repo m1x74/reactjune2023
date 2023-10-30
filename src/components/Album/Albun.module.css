@@ -1,0 +1,10 @@
+.Todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    margin-top: 20px;
+    border: solid 1px darkturquoise;
+
+}
