@@ -1,0 +1,6 @@
+.User{
+    display: flex;
+    justify-content: space-between;
+    border: mediumaquamarine solid 1px;
+    width: 450px ;
+}
