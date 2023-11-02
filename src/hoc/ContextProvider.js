@@ -2,11 +2,11 @@ import {createContext, useState} from 'react';
 
 const Context=createContext(null)
 const ContextProvider = ({children}) => {
-    const state=useState();
+    const state=useState(null);
     return (
-        <ContextProvider value={state}>
+        <Context.Provider value={state}>
             {children}
-        </ContextProvider>
+        </Context.Provider>
     );
 };
 

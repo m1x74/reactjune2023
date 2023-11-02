@@ -7,7 +7,7 @@ const Header = () => {
     const{chapter}=useChapter()
     return (
         <div className={css.Header}>
-            {chapter?{chapter} : Rick & Morty}
+            {chapter?<h2>{chapter}</h2> :<h2>Rick & Morty</h2> }
 
         </div>
     );
