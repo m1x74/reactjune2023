@@ -3,10 +3,12 @@ import {useNavigate} from "react-router-dom";
 
 import css from './episode.module.css'
 import {episodeService} from "../../services";
+import {useChapter} from "../../hooks/useChapter";
 
 const Episode = ({episodex}) => {
     const navigate=useNavigate()
     const {id,name,air_date,episode}=episodex
+    const {setChapter}=useChapter();
     const [characters,setCharacters]=useState([]);
     useEffect(()=>{
         episodeService.getById(id).then(({data})=>setCharacters(data.characters))
@@ -15,6 +17,7 @@ const Episode = ({episodex}) => {
     const toCharacter=()=>{
         const ids=characters.map(character=>character.split('/').slice(-1)[0]).join(',');
         navigate(`/characters/${ids}`)
+        setChapter(name)
     }
 
     return (

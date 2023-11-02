@@ -1,11 +1,14 @@
 import React from 'react';
 
 import css from './header.module.css'
+import {useChapter} from "../../hooks/useChapter";
 
 const Header = () => {
+    const{chapter}=useChapter()
     return (
         <div className={css.Header}>
-            Rick & Morty
+            {chapter?{chapter} : Rick & Morty}
+
         </div>
     );
 };

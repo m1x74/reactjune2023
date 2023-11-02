@@ -1,10 +1,12 @@
 import React, {useContext} from 'react';
 import {Context} from "../hoc/ContextProvider";
 
-const UseChapter = () => {
+const useChapter = () => {
   const [chapter,setChapter]=useContext(Context)
-
+return{
+    chapter,setChapter
+}
 
 };
 
-export {UseChapter};
+export {useChapter};

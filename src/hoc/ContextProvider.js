@@ -1,8 +1,8 @@
-import React, {createContext, useState} from 'react';
+import {createContext, useState} from 'react';
 
-const Context=createContext()
+const Context=createContext(null)
 const ContextProvider = ({children}) => {
-    const state=useState(null);
+    const state=useState();
     return (
         <ContextProvider value={state}>
             {children}
