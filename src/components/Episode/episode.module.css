@@ -1,0 +1,26 @@
+.Episode{
+    width: 20%;
+    height: 130px;
+    border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Mini{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.Mini:hover{
+    background-color: red;
+    cursor: pointer;
+}

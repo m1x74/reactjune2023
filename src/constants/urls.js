@@ -1,3 +1,3 @@
-const baseURL= 'https://rickandmortyapi.com/api/episode';
+const baseURL= 'https://rickandmortyapi.com/api';
 
 export {baseURL}

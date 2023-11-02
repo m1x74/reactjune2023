@@ -4,10 +4,11 @@ import {Episodes} from "../../components";
 
 const EpisodesPage = () => {
 
-    const {data}=useLoaderData();
+
+
     return (
         <div>
-            <Episodes data={data}/>
+            <Episodes/>
         </div>
     );
 };

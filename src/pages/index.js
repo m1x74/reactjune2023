@@ -1,2 +1,2 @@
-export * from './Episodes/EpisodesPage'
-export * from './Characters/Characters'
+export * from './EpisodesPage/EpisodesPage'
+export * from './CharactersPage/CharactersPage'
