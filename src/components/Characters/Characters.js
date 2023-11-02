@@ -18,7 +18,6 @@ const Characters = () => {
     const navigate=useNavigate();
     const {setChapter}=useChapter();
     const back =()=>{
-        setChapter(null);
         navigate(-1)
     }
 

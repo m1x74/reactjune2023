@@ -4,11 +4,16 @@ import {Episode} from "../Episode/Episode";
 import css from './episodes.module.css';
 import {useSearchParams} from "react-router-dom";
 import {episodeService} from "../../services";
+import {useChapter} from "../../hooks/useChapter";
 
 const Episodes = () => {
         const [episodes,setEpisodes]=useState([]);
         const [query,setQuery]=useSearchParams({page:'1'});
         const [prevNext,setPrevNext]=useState({prev:null,next:null})
+        const {setChapter}=useChapter();
+        useEffect(()=>{
+            setChapter(null);
+        },[])
 
 
         useEffect(()=>{
